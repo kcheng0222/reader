@@ -3,9 +3,14 @@
   <body>
     <h1>Reader</h1>
     <p>Enter text to increase readability.</p>
-      <form action="/action_page.php">
-        <input type="text" name="fname"><br>
-      <input type="submit" value="Submit">
-</form> 
+    <form action="/action_page.php">
+        <input type="text" name="inputField"><br>
+        <td><button onclick="takeInput()">Submit</button></td>
+    </form> 
+    <script>
+    function takeInput() {
+        var inputText = document.getElementById("inputField").value;
+    }
+</script>    
   </body>
 </html>
