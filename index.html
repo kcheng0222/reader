@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
   <body>
+    <script>
     <h1>Reader</h1>
     <p>Enter text</p>
     <form>
         <input type="text" name="inputField"><br>
-        <td><button onclick="takeInput()">Submit</button></td>
+        <button onclick="takeInput()">Submit</button>
     </form> 
-    <script>
+    
     function takeInput() {
         var inputText = document.getElementById("inputField").value;
         alert(inputText);
     }
-</script>    
+    </script>    
   </body>
 </html>
