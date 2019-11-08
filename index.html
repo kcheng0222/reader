@@ -2,17 +2,18 @@
 <html>
   <body>
     <script>
+      
+    function takeInput() {
+        var inputText = document.getElementById("inputField").value;
+        alert(inputText);
+    }
+    </script>   
     <h1>Reader</h1>
     <p>Enter text</p>
     <form>
         <input type="text" name="inputField"><br>
         <button onclick="takeInput()">Submit</button>
     </form> 
-    
-    function takeInput() {
-        var inputText = document.getElementById("inputField").value;
-        alert(inputText);
-    }
-    </script>    
+     
   </body>
 </html>
