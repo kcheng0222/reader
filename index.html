@@ -1,63 +1,20 @@
-<!--
-<!DOCTYPE html>
-<html>
-  <body>
-    <script>
-      
-    function takeInput() {
-        var inputText = document.getElementById("inputField").value;
-        alert(inputText);
-    }
-    </script>   
-    <h1>Reader</h1>
-    <p>Enter text</p>
-    <form>
-        <input type="text" id="inputField"><br>
-        <button onclick=takeInput()>Submit</button>
-    </form> 
-     
-  </body>
-</html>
--->
-<!--
-<!DOCTYPE html>
-<html>
-
-<head>
-
-    <script>
-        var user_input = prompt("Please enter your text:", "");
-        if (user_input!= null) {
-            document.getElementById("input_text").innerHTML = user_input;
-        }
-    </script>
-
-</head>
-
-<body>
-
-    <div id="input_text">Text.</div>
-
-</body>
-
-</html>
--->
 
 <!DOCTYPE html>
 <html>
 <body>
 
-<div id="welcome">.</div>
+<div id="text">.</div>
 
 </body>
 <head>
 
 <script> 
 
-var customerName = prompt("Please enter your text:", "");
-if (customerName != null) {
-    var foo = document.getElement('welcome');
-    foo.value = customerName;
+var userInput = prompt("Please enter your text:", "");
+if (userInput != null) {
+    var textBox = document.getElementById('text');
+  
+    textBox.innerHTML = userInput;
 }
  
 
