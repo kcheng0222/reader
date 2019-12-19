@@ -1,16 +1,31 @@
 <!DOCTYPE html>
 <html>
 
-<body>
-
-    <div id="text">.</div>
-
-</body>
-
 <head>
+    <title>Reader</title>
 
+    <body>
+        <div id="text">
+            .
+        </div>
+    </body>
+    <style>
+        body {
+            font-family: "Lucida Console", Monaco, monospace;
+            background-color: #212121;
+            font-size: large;
+            text-indent: 50px;
+            color: #FFFFFF;
+            opacity: 0.8;
+            padding-left: 500px;
+            padding-right: 500px;
+            padding-top: 100px;
+            padding-bottom: 10px;
+            line-height: 35px;
+          }
+    </style>
     <script>
-        var userInput = prompt("Please enter your text:", "");
+        var userInput = prompt("Enter your text:", "");
         if (userInput != null) {
             var textBox = document.getElementById('text');
           
